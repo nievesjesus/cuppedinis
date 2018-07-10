@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Cuppedinis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-green" translatesAutoresizingMaskIntoConstraints="NO" id="teJ-9Y-HNz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <viewLayoutGuide key="safeArea" id="G5u-Ug-0ba"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGh-d5-WUM">
+                                <rect key="frame" x="0.0" y="91" width="375" height="505"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkz-yR-exC">
+                                <rect key="frame" x="0.0" y="596" width="375" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov4-Ih-jab">
+                                        <rect key="frame" x="8" y="20" width="359" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="oXw-GT-JqU"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Siguiente">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiU-Tm-yYJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ov4-Ih-jab" firstAttribute="top" secondItem="tkz-yR-exC" secondAttribute="top" constant="20" id="1k9-Vd-TjO"/>
+                                    <constraint firstAttribute="height" constant="71" id="HTV-0b-ARV"/>
+                                    <constraint firstItem="Ov4-Ih-jab" firstAttribute="leading" secondItem="tkz-yR-exC" secondAttribute="leading" constant="8" id="Siy-PA-dQQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ov4-Ih-jab" secondAttribute="bottom" constant="21" id="eKA-v2-lyt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ov4-Ih-jab" secondAttribute="trailing" constant="8" id="sdh-Uy-zqF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="cL9-IS-307">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cuppedinis" translatesAutoresizingMaskIntoConstraints="NO" id="VOM-yT-Zos">
+                                        <rect key="frame" x="37" y="31" width="300" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Xne-Kw-MMJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VOM-yT-Zos" secondAttribute="trailing" constant="38" id="Dkr-9J-zB8"/>
+                                    <constraint firstAttribute="height" constant="91" id="Fgq-uc-98J"/>
+                                    <constraint firstItem="VOM-yT-Zos" firstAttribute="leading" secondItem="cL9-IS-307" secondAttribute="leading" constant="37" id="ZdB-I0-8BO"/>
+                                    <constraint firstAttribute="bottom" secondItem="VOM-yT-Zos" secondAttribute="bottom" id="cTD-mX-9yp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.6588235294117647" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cL9-IS-307" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="01S-Rv-Gc2"/>
+                            <constraint firstItem="cGh-d5-WUM" firstAttribute="top" secondItem="cL9-IS-307" secondAttribute="bottom" id="5A3-69-S0L"/>
+                            <constraint firstItem="cL9-IS-307" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5GS-Sb-hyh"/>
+                            <constraint firstItem="teJ-9Y-HNz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DPH-co-QF6"/>
+                            <constraint firstItem="cGh-d5-WUM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FH6-sM-1Tz"/>
+                            <constraint firstItem="cGh-d5-WUM" firstAttribute="top" secondItem="cL9-IS-307" secondAttribute="bottom" id="NLD-tM-oPk"/>
+                            <constraint firstItem="teJ-9Y-HNz" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="OpU-MK-oiw"/>
+                            <constraint firstItem="teJ-9Y-HNz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Os8-0x-bm5"/>
+                            <constraint firstItem="tkz-yR-exC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b9O-SS-nUz"/>
+                            <constraint firstItem="cGh-d5-WUM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bDb-Yj-mTd"/>
+                            <constraint firstItem="teJ-9Y-HNz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fkq-uL-yxl"/>
+                            <constraint firstItem="tkz-yR-exC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j5v-b1-dpP"/>
+                            <constraint firstItem="cL9-IS-307" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kMF-6K-VSh"/>
+                            <constraint firstItem="tkz-yR-exC" firstAttribute="top" secondItem="cGh-d5-WUM" secondAttribute="bottom" id="rBn-LN-KWW"/>
+                            <constraint firstItem="tkz-yR-exC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tu5-zU-jaF"/>
+                            <constraint firstItem="tkz-yR-exC" firstAttribute="top" secondItem="cGh-d5-WUM" secondAttribute="bottom" id="w7u-cd-gUd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="upN-WK-R16"/>
+                    <connections>
+                        <outlet property="numViewContainer" destination="cGh-d5-WUM" id="djh-il-MIS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.59999999999999" y="1.3493253373313345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background-green" width="1080" height="1920"/>
+        <image name="cuppedinis" width="300" height="60"/>
+    </resources>
+</document>
